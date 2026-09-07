@@ -46,3 +46,17 @@
 # * What happens if the user enters `0` for the number of people? How might you handle that?
 
 # --- Write Your Code Below ---
+print("Hello there, welcome to the tip calculator. In this calculator you will imput the total bill amount, the percentage of tip you would like to offer, and the number of people involved in your bill.")
+print("this is done so that you can find the tip amount, the bill with your tip(s) included, and the amount each person should pay.")
+
+total_bill = float(input("what is the total bill? $"))
+tip_percentage = float(input("what percent would you like to tip?"))
+num_people = float(input("how many people will be splitting the bill?"))
+
+tip_amount = total_bill * (tip_percent / 100)
+total_with_tip = total_bill + tip_amount
+per_person = total_with_tip / num_people
+
+print(f"tip amount:${tip_amount:.2f}")
+print(f"Total(tip added):${total_with_wip:.2f}")
+print(f"per person:${per_person:.2f}")
